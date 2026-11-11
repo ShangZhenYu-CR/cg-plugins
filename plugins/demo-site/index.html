@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>毛豆 · 演示站</title>
+<style>
+:root{--bg:#FCFCFB;--fg:#0b0b0b;--dim:#52514e;--faint:#898781;--brand:#c6613f;--line:rgba(0,0,0,.08)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,'Segoe UI','Microsoft YaHei',sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:64px 24px 80px}
+h1{font-family:Georgia,'Songti SC',serif;font-size:44px;font-weight:500;margin:0 0 12px;letter-spacing:-.01em}
+.sub{color:var(--dim);margin:0 0 40px;font-size:17px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+.card h3{margin:0 0 6px;font-size:15px;font-weight:600}
+.card p{margin:0;color:var(--faint);font-size:13px;line-height:1.6}
+.badge{display:inline-block;font-size:12px;color:var(--brand);border:1px solid color-mix(in srgb,var(--brand) 30%,transparent);border-radius:999px;padding:2px 10px;margin-bottom:18px}
+.foot{margin-top:44px;font-size:13px;color:var(--faint)}
+</style></head>
+<body><div class="wrap">
+<span class="badge">由毛豆生成 · 托管在 GitHub Pages</span>
+<h1>这个页面是产物，不是对话</h1>
+<p class="sub">它在右边那个「设计」面板里被写出来，然后一键推到插件库，就变成一个任何人都能打开的独立网址。</p>
+<div class="grid">
+  <div class="card"><h3>独立源</h3><p>shangzhenyu-cr.github.io —— 和你主站不同域，读不到登录信息。</p></div>
+  <div class="card"><h3>沙箱运行</h3><p>站内用 iframe 打开，只给 allow-scripts，没有 allow-same-origin。</p></div>
+  <div class="card"><h3>可分享</h3><p>链接发给站外的人也照样能看，不需要口令。</p></div>
+</div>
+<div class="foot">这是演示项目里的示例产物。</div>
+</div></body></html>
