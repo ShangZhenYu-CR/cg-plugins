@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>示例插件 · 计数器</title>
+<style>
+  :root{color-scheme:light dark}
+  body{margin:0;font:15px/1.6 system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif;
+       background:#FCFCFB;color:#0b0b0b;display:grid;place-items:center;min-height:100vh}
+  .box{text-align:center;padding:32px}
+  h1{font-size:20px;font-weight:600;margin:0 0 6px}
+  p{color:#898781;margin:0 0 20px;font-size:13px}
+  .n{font-size:64px;font-weight:600;font-variant-numeric:tabular-nums;margin:8px 0 18px}
+  button{height:36px;padding:0 18px;border-radius:10px;border:1px solid rgba(0,0,0,.12);
+         background:#fff;color:#0b0b0b;font:inherit;cursor:pointer}
+  button:hover{background:#f2f2f0}
+  button.primary{background:#c6613f;border-color:#c6613f;color:#fff}
+  @media (prefers-color-scheme:dark){body{background:#151515;color:#fff}
+    button{background:#1f1f1f;border-color:rgba(255,255,255,.14);color:#fff}}
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>示例插件</h1>
+    <p>这是一个能跑的最小页面：不需要任何依赖。</p>
+    <div class="n" id="n">0</div>
+    <button id="minus">−1</button>
+    <button class="primary" id="plus">+1</button>
+  </div>
+  <script>
+    let n = 0;
+    const el = document.getElementById('n');
+    document.getElementById('plus').onclick = () => { el.textContent = ++n; };
+    document.getElementById('minus').onclick = () => { el.textContent = --n; };
+  </script>
+</body>
+</html>
